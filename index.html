@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive register form page</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <main>
+        <div class="container-fluid">
+
+            <div class="title">
+                <h2>Formulario de registro</h2>
+            </div>
+
+            <div class="form__login">
+
+                
+
+                <div class="categoria__info__personal">
+                    
+                    <div class="formulario">
+
+                        <div class="header">
+                            <h2>Información personal</h2>
+                        </div>
+
+                        <hr>
+
+                        <form action="">
+                            <label for="nombre"><h2>Nombres</h2></label>
+                            <input type="text" name="nombre" required minlength="10" maxlength="30" placeholder="Kevin Santiago">
+
+                            <label for="apellido"><h2>Apellidos</h2></label>
+                            <input type="text" name="apellido" required minlength="10" maxlength="30" placeholder="Suarez Ortega">
+
+                            <label for="fechanacimiento"><h2>Fecha de nacimiento</h2></label>
+                            <input type="date" name="fechanacimiento" required>
+
+                            <div class="header">
+                                <h2>Cuenta</h2>
+                            </div>
+
+                            <hr>
+
+                            <label for="email">
+                                <h2>Correo electrónico</h2>
+                            </label>
+                            <input type="email" name="email" required minlength="6" maxlength="30" >
+
+                            <label for="contraseña">
+                                <h2>Contraseña</h2>
+                            </label>
+                            <input type="password" name="contraseña" required minlength="8" maxlength="30" >
+
+                            <div class="header">
+                                <h2>Contacto</h2>
+                            </div>
+
+                            <hr>
+
+                            <label for="direccion">
+                                <h2>Dirección</h2>
+                            </label>
+                            <input type="text" name="direccion" required minlength="10" maxlength="60" placeholder="Cra 11 # 22 - 33a">
+
+                            <label for="ciudad"><h2>Ciudad</h2></label>
+                            <input list="ciudad" name="ciudad" placeholder="Bucaramanga" required>
+                            <datalist id="ciudad">
+                                <option value="Bucaramanga"></option>
+                                <option value="Florida Blanca"></option>
+                                <option value="Girón"></option>
+                                <option value="Piedecuesta"></option>
+                            </datalist>
+
+                            <label for="telefono"><h2>Teléfono</h2></label>
+                            <input type="tel" minlength="10" required placeholder="1234567890">
+
+                            <button type="submit" name="registro"> Registrarme</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap');
+
+    body{
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+        color: #353535;
+        background-color: #e5e5e5;
+    }
+
+    hr{
+        border: solid 2px rgba(40, 75, 99, 0.315);
+        margin-bottom: 1.5rem;
+    }
+
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 6rem 0;
+    width: 100%;
+}
+
+.container-fluid .title{
+    font-size: 3rem;
+    width: 500px;
+    margin-bottom: 2rem;
+}
+
+.container-fluid .form__login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+    width: 500px;
+    height: auto;
+    background-color: rgba(40, 75, 99, 0.315);
+    border-radius: 15px;
+    border-radius: 25px;
+    box-shadow:  14px 14px 28px #cfcfcf,
+                -14px -14px 28px #ffffff;
+    border: solid 1px;
+}
+
+.container-fluid .form__login .categoria__info__personal{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.719);
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+}
+
+.categoria__info__personal .header {
+    background-color: transparent;
+    width: fit-content;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+.formulario input:placeholder-shown{
+    color: rgba(40, 75, 99, 0.315);
+}
+
+.formulario input[type="text"]{
+    background-color: #ffffff;
+    width: 100%;
+    margin-top: .5rem; margin-bottom: 1.5rem;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.formulario input[type="email"]{
+    text-transform: initial;
+    background-color: #ffffff;
+    width: 100%;
+    margin-top: .5rem; margin-bottom: 1.5rem;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.formulario input[type="password"]{
+    text-transform: initial;
+    background-color: #ffffff;
+    width: 100%;
+    margin-top: .5rem; margin-bottom: 1.5rem;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.formulario button{
+    background-color: #353535;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s;
+    transform: .5s;
+}
+
+.formulario button:hover{
+    background-color: rgba(40, 75, 99, 0.315);
+    transition: .5s all ease-in-out;
+    transform: scale(1.05);
+}
+
+.formulario input[type="tel"]{
+    text-transform: initial;
+    background-color: #ffffff;
+    width: 100%;
+    margin-top: .5rem; margin-bottom: 1.5rem;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.formulario input[type="date"]{
+    background-color: #ffffff;
+    width: 100%;
+    margin-top: .5rem; margin-bottom: 1.5rem;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+input[name="ciudad"] {
+  background-color: #ffffff;
+    width: 100%;
+    margin-top: .5rem; margin-bottom: 1.5rem;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+@media screen and (max-width:500px) {
+    .container-fluid .title{
+    width: calc(100% - 2rem);
+    margin-bottom: 2rem;
+}
+.container-fluid .form__login{
+    width: calc(100% - 2rem);
+    height: auto;
+    background-color: rgba(40, 75, 99, 0.315);
+}
+
+.container-fluid .form__login .categoria__info__personal{
+    padding: 1rem;
+}
+
+
+
+}
