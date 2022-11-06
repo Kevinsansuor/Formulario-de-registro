@@ -34,10 +34,10 @@
 
                         <form action="registro--completo.html">
                             <label for="nombre"><h2>Nombres</h2></label>
-                            <input type="text" name="nombre" required minlength="10" maxlength="30" placeholder="Kevin Santiago">
+                            <input type="text" name="nombre" required minlength="3" maxlength="30" placeholder="Kevin Santiago">
 
                             <label for="apellido"><h2>Apellidos</h2></label>
-                            <input type="text" name="apellido" required minlength="10" maxlength="30" placeholder="Suarez Ortega">
+                            <input type="text" name="apellido" required minlength="3" maxlength="30" placeholder="Suarez Ortega">
 
                             <label for="fechanacimiento"><h2>Fecha de nacimiento</h2></label>
                             <input type="date" name="fechanacimiento" id="fechanacimiento" required>
@@ -56,7 +56,13 @@
                             <label for="contraseña">
                                 <h2>Contraseña</h2>
                             </label>
-                            <input type="password" name="contraseña" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" title="Más de 8 caracteres con al menos un número, una mayúscula y un signo especial">
+                            <input type="password" name="contraseña" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" title="Más de 8 caracteres con al menos un número, una mayúscula y un signo especial" id="contraseña">
+
+                            <label class="b-contain">
+                                <span>Mostrar mi contraseña</span>
+                                <input type="checkbox" onclick="myFunction()"/>
+                                <div class="b-input"></div>
+                            </label>
                             
                             <div class="requirements">
                                 <ul>
