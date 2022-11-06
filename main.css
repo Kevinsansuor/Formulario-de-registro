@@ -44,6 +44,15 @@
     border: solid 1px;
 }
 
+.formulario .requirements{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.requirements span{
+    color: #e63946;
+}
+
 .container-fluid .form__login .categoria__info__personal{
     width: 100%;
     background-color: rgba(255, 255, 255, 0.719);

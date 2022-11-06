@@ -56,7 +56,23 @@
                             <label for="contraseña">
                                 <h2>Contraseña</h2>
                             </label>
-                            <input type="password" name="contraseña" required minlength="8" maxlength="30" >
+                            <input type="password" name="contraseña" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" >
+                            
+                            <div class="requirements">
+                                <ul>
+                                    <li>
+                                        <p>De 8 caracteres</p>
+                                    </li>
+
+                                    <li><p>Al menos un número</p></li>
+                                    <li>
+                                        <p>Al menos una mayúscula</p>
+                                    </li>
+                                    <li>
+                                        <p>Al menos un signo especial <span>*.!@#$%^&(){}[]:;<>,.?/~_+-=|\</span></p>
+                                    </li>
+                                </ul>
+                            </div>
 
                             <div class="header">
                                 <h2>Contacto</h2>
