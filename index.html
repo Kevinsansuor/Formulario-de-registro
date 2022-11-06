@@ -40,7 +40,7 @@
                             <input type="text" name="apellido" required minlength="10" maxlength="30" placeholder="Suarez Ortega">
 
                             <label for="fechanacimiento"><h2>Fecha de nacimiento</h2></label>
-                            <input type="date" name="fechanacimiento" required>
+                            <input type="date" name="fechanacimiento" id="fechanacimiento" required>
 
                             <div class="header">
                                 <h2>Cuenta</h2>
@@ -56,7 +56,7 @@
                             <label for="contraseña">
                                 <h2>Contraseña</h2>
                             </label>
-                            <input type="password" name="contraseña" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" >
+                            <input type="password" name="contraseña" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" title="Más de 8 caracteres con al menos un número, una mayúscula y un signo especial">
                             
                             <div class="requirements">
                                 <ul>
@@ -105,6 +105,9 @@
             </div>
         </div>
     </main>
+
+
+    <script src="main.js"></script>
 
 </body>
 </html>
